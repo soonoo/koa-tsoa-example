@@ -1,0 +1,17 @@
+{
+  "swagger": {
+    "outputDirectory": "./dist",
+    "entryFile": "./src/app.ts",
+    "host": "localhost:3002",
+    "basePath": "/v1",
+    "noImplicitAdditionalProperties": "silently-remove-extras",
+    "yaml": true,
+    "specVersion": 2
+  },
+  "routes": {
+    "basePath": "/v1",
+    "entryFile": "./src/app.ts",
+    "routesDir": "./src",
+    "middleware": "koa"
+  }
+}
