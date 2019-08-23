@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -e ts --ignore 'src/routes.ts'  --exec 'npx tsoa routes && tsc --experimentalDecorators true src/app.ts && node src/app.js'"
+    "start": "nodemon -e ts --ignore 'src/routes.ts'  --exec 'npx tsoa routes && tsc -p tsconfig.json || exit 1 && node src/app.js'"
   },
   "dependencies": {
     "@types/koa": "^2.0.49",
@@ -12,6 +12,8 @@
     "koa": "^2.8.1",
     "koa-logger": "^3.2.1",
     "koa-router": "^7.4.0",
+    "mysql": "^2.17.1",
+    "reflect-metadata": "^0.1.13",
     "tsoa": "^2.4.11",
     "typeorm": "^0.2.18"
   }
