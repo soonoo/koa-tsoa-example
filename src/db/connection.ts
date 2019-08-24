@@ -11,4 +11,5 @@ createConnection({
   entities: [
     User,
   ],
+  logging: true,
 });
